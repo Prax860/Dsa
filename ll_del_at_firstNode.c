@@ -24,6 +24,7 @@ int main(){
     struct node* head = NULL;
     struct node* current;
     int n ;
+    printf("Enter the no. of numbers in linked list: ");
     scanf("%d",&n);
     int data;
     char ch;
@@ -41,7 +42,7 @@ int main(){
     struct node* ptr = head;
     
     while(ptr!=NULL){
-        printf("%d",ptr->data);
+        printf("%d ",ptr->data);
         ptr = ptr->link;
     }
     return 0;
